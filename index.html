@@ -8,8 +8,12 @@
 </head>
 <body>
     <script>
-        const userInput = prompt("Enter a list of comma-separated froyo flavors:");
-        processFroyoOrder(userInput);
+        window.onload = function() {
+            const userInput = prompt("Enter a list of comma-separated froyo flavors:");
+            if (userInput) {
+                processFroyoOrder(userInput);
+            }
+        };
     </script>
 </body>
 </html>
